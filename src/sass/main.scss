@@ -1,0 +1,24 @@
+// variables
+$white: #efeee9;
+$beige: #eeebdf;
+$main-font-color: #373e42;
+$subtitle-color: #455a64;
+$white-green: #00bfa5;
+$green: #009688;
+
+// fonts
+@import "_misc/font-roboto";
+
+// layout
+@import "_misc/mixins";
+@import "_misc/adjustment";
+
+// styles common
+@import "common/header";
+@import "common/footer";
+
+// style pages
+@import "sections/index.scss";
+
+
+@import "vendors.min.scss";

@@ -1,0 +1,142 @@
+extends ../layouts/main-layout.pug
+
+block title
+  title Dashboard
+
+block content
+  aside.sidebar
+    .panel
+     .panel__user Администратор
+     .panel__options
+       a.panel__options-btn(href='#')
+         i.fa.fa-home
+       a.panel__options-btn(href='#')
+         i.fa.fa-envelope
+         .panel__options-counter 12
+    .user
+     .user__photo-container
+       .user__photo
+         img(src='../images/content/avatar.jpg', alt='')
+     .user__name
+       .user__name-title Константин Константинов
+       a.user__name-link(href='#') Профиль
+    nav.menu
+     ul.menu
+       li.menu__item
+         a.menu__link(href='#')
+           .menu__link-icon
+             i.fa.fa-home
+           .menu__link-title Консоль
+       li.menu__item
+         a.menu__link(href='#')
+           .menu__link-icon
+             i.fa.fa-th
+           .menu__link-title Виджеты
+         a.menu__options(href='#') Обновления
+       li.menu__item
+         a.menu__link(href='#')
+           .menu__link-icon
+             i.fa.fa-envelope
+           .menu__link-title Консоль
+         a.menu__options.menu__options_bg_red(href='#') 117
+       li.menu__item
+         a.menu__link(href='#')
+           .menu__link-icon
+             i.fa.fa-hashtag
+           .menu__link-title Оформление
+    a.menu__link.sidebar__exit(href='#')
+     .menu__link-icon
+       i.fa.fa-power-off
+     .menu__link-title Выйти из профиля
+  .content
+    .header
+      .header__reload
+        a.header__reload-link(href='#')
+          i.fa.fa-refresh
+      .header__search
+        form.header__search-form
+          input.header__search-input(name='', type='text', placeholder='Поиск по панели управления')
+          button.header__search-button(type='submit')
+            i.fa.fa-search
+      .header__user
+        .header__user-counter 10
+        .header__user-name Константин Константинов
+        .header__user-photo
+          .header__user-avatar
+            img(src='../images/content/avatar.jpg', alt='')
+      .header__settings
+        i.fa.fa-gear
+    .content-wrapper
+          section.section.section_white
+            ul.icons
+              li.icons__item
+                .icons__pic
+                  img(src='../images/icons/eye.png', alt='')
+                .icons__counter 1 500
+                .icons__desc Просмотров
+              li.icons__item
+                .icons__pic
+                  img(src='../images/icons/pen.png', alt='')
+                .icons__counter 1 500
+                .icons__desc Заявок
+              li.icons__item
+                .icons__pic
+                  img(src='../images/icons/mana.png', alt='')
+                .icons__counter 1 500
+                .icons__desc Мана
+              li.icons__item
+                .icons__pic
+                  img(src='../images/icons/hands.png', alt='')
+                .icons__counter 1 500
+                .icons__desc Клиентов
+          section.section
+            .visitors__container
+              .visitors
+                .visitors__title Посещения
+                ul.visitors__daily
+                  li.visitors__daily-item
+                    .visitors__daily-title За все время:
+                    .visitors__daily-count 4 316
+                  li.visitors__daily-item
+                    .visitors__daily-title За месяц:
+                    .visitors__daily-count 4 316
+                  li.visitors__daily-item
+                    .visitors__daily-title Сегодня:
+                    .visitors__daily-count 4 316
+                .visitors__bar
+                  .visitors__bar-amount
+                .visitors__desc
+                  | На 10% выше 
+                  span прошлого месяца
+              .visitors.visitors_blue
+                .visitors__title Посещения
+                ul.visitors__daily
+                  li.visitors__daily-item
+                    .visitors__daily-title За все время:
+                    .visitors__daily-count 4 316
+                  li.visitors__daily-item
+                    .visitors__daily-title За месяц:
+                    .visitors__daily-count 4 316
+                  li.visitors__daily-item
+                    .visitors__daily-title Сегодня:
+                    .visitors__daily-count 4 316
+                .visitors__bar
+                  .visitors__bar-amount
+                .visitors__desc
+                  | На 10% выше 
+                  span прошлого месяца
+          section.section.section_white
+            .section__title Последние посты
+            ul.posts
+              li.posts__item
+                .posts__desc Подводный мир
+              li.posts__item
+                .posts__desc Чего бы такого съесть?
+              li.posts__item
+                .posts__desc Как я научился плавать
+              li.posts__item
+                .posts__desc Подводный мир
+              li.posts__item
+                .posts__desc Чего бы такого съесть?
+              li.posts__item
+                .posts__desc Как я научился плавать
